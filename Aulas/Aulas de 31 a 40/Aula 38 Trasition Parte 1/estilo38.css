@@ -1,0 +1,19 @@
+p{
+	width: 300px;
+	height: 250px;
+	border-radius: 10px;
+	border:1px solid #000;
+	padding: 10px;
+	text-align: justify;
+	transition: width 2s, height 2s,background-color 2s,color 2s ;
+	/*ease, linear , ease-in ,ease-out,ease-in-out,cubic-bezier*/
+	transition-timing-function:cubic-bezier(0,0.5,1,0.5); 
+}	
+
+
+p:hover{
+	width: 500px;
+	height: 120px;
+	background-color: #F00;
+	color: #FFF;
+}

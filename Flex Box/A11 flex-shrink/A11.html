@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <style>
+         .item{
+            margin: 5px; 
+            padding: 5px; 
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            width: 150px;
+
+         }
+
+         .container{
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            justify-content:center ;
+            align-items: center;
+            
+            
+         }
+
+        .flex{
+            display: flex;
+        }
+
+        .horizontal{
+            flex-direction: row;
+        }
+
+        .vertical{
+            flex-direction: column;
+        }
+
+        .quebra{
+            flex-wrap: wrap;
+        }
+
+        .fluxo_horizontal_quebra {
+            flex-flow: column-reverse;
+        }
+
+        .tam0{
+            flex-grow:0;
+        }
+        .tam1{
+            flex-grow:1;
+        }
+        .tam2{
+            flex-grow:2;
+        }
+        .tam3{
+            flex-grow:3;
+        }
+
+        .basea{
+            flex-basis: auto;
+        }
+        .base0{
+            flex-basis: 0;
+        }
+        .base1{
+            flex-basis: 1;
+        }
+        .basea2{
+            flex-basis: 2;
+        }
+
+        .ordem0{
+            order: 0;
+        }
+        .ordem1{
+            order: 1;
+        }
+        .ordem2{
+            order: 2;
+        }
+        .ordem3{
+            order: 3;
+        }
+
+        .reduzir0{
+            flex-shrink: 0;
+        }
+
+        .reduzir1{
+            flex-shrink: 1;
+        }
+        .reduzir3{
+            flex-shrink: 3;
+        }
+
+        body{
+            font-family: arial;
+            color: #000;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container flex horizontal ">
+        <div class="item tam1  reduzir3">CFB  1</div>
+        <div class="item tam1  reduzir0">CFB  2</div>
+        <div class="item tam1  reduzir0">CFB  3</div>
+        <div class="item tam1  reduzir1">CFB  4</div>
+    </div>     
+</body>
+</html>
+
+
+<!-- 
+Quanto maior o valor do flex-shrink maior é a capacidade de reduçao desse elemento
+
+  Flex-shrink: determina a capacidade do elemento de reduzir para caber no conteiner  
+  flex-shrink:1; valor padrao ele permite reduzir o item para caber no conteiner 
+
+  flex-shrink:0 o elemento não ira reduzir o seu tamanho para caber em uma div
+  O flex-shrink tem q ser usado sem o flex-wrap:rap;
+
+ -->

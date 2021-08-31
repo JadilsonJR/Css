@@ -1,0 +1,61 @@
+nav {
+	width: 200px;
+	float: left;
+}
+
+nav ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	background: #F00;
+	color: #FFF;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	list-style-type: none;
+	margin: 4px;
+	padding: 2px;
+}
+
+article{
+	margin-left: 210px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+ body{
+ 	margin: 0px;
+
+ }
+
+ nav{
+ 	width: 100%;
+ }
+ 
+ nav li{
+ 	font-size: 30px;
+ 	text-align: center;
+ }
+
+ article{
+ 	margin:4px;
+ }
+
+article p{
+	text-align: justify;
+}
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px){
+ nav li{
+ 	font-size: 30px;
+ 	text-align: center;
+ }
+
+ article div {
+ 	float: left;
+ }
+
+
+}

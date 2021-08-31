@@ -1,0 +1,117 @@
+Aula 1: Display Flex
+  FLEX BOX
+     DOIS EIXOS: MAIN AXIS: DA ESQUERDA PARA DIREITA , CROSS AXIS: DE CIMA PARA BAIXO.
+    
+     DUAS CONFIGURAÇOES: CONFIGURAÇOES DOS CONTEINERS, CONFIGURAÇOES DO ITENS.
+
+     OS FLEX ITENS SÃO OS FILHOS DOS CONTEINERS ELES PEGAM AS CARACTERISTICAS DO CONTEINERS COMO A 
+     ALTURA PADRAO DO CONTEINER
+
+
+Aula 2: Flex-Direction 
+ Flex direction
+
+    row:horizontal Esquerda para Direita;
+    row-reverse: Horizontal inverso;
+    colunmn: Vertical cima para Baixo;
+    column-reverse: Vertical inverso
+    
+Aula 3: Flex-Wrap 
+ Flex-Wrap: Define a quebra de linha no conteiner 
+    flex-wrap: Realiza a quebra de linha 
+    flex-wrap: nowarp = sem quebra 
+    flex-wrap: wrap = quebra de linha ativado 
+    flex-wrap: wrap-reverse = ele inverte a ordem do (main axis)  e quebra as linhas
+
+
+Aula 4: Flex-Flow
+ FLEX-FLOW: é a uniao dos comandos Flex-direction e Flex-wrap
+    flex-flow: row wrap; é a uniao do modo horizontal com quebra
+    flex-flow: colunm wrap; é a uniao do modo vertical com quebra
+    
+Aula 5:Justify-Content
+ Justify-content: é uma propriedade de alinhamento que controla os itens do flex-box 
+    justify-content: flex-start = alinha da esquerda para direita depende da direção do flex-direction;
+    justify-content: flex-end = alinha ao final 
+    justify-content: center = alinha ao centro
+    justify-content: space-between = alinha os elementos o primeito em flex-start e o ultimo no flex-end 
+    justify-content: space-arround = alinha os elementos distribuindo os elementos igualmente entre as pontas 
+    justify-content: space-evenly = distribui igualmente os espaço estre eles
+
+Aula 6: Align=Items
+  normamelte e alinhamento vertical 
+    align-itens : alinha o eixo do conteudo de acordo com o alinhamento vertical sempre o ao contrario do justify-content
+    align-itens: stretch valor padrao não funciona se o elemento ja tiver um valor 
+    align-itens: flex-start  inicio do eixo secundario, devido ao alinhamento  horizotal ser o principal o eixo vertical é 
+    o eixo secundario ("flex-direction:row"); sendo entao o inicio do eixo vertical 
+    align-itens: flex-end fim do eixo secundario (vertical)
+    align-itens: center centro do eixo 
+    align-itens: baseline não entendi mas pega um valor padão
+
+Aula 7: Align-Content
+ caso eu queira que o elemento ocupe todo os espaços do conteiner
+             
+             1. Quantos elemento voce quer na linha do conteiner? neste caso 3
+             pegue 100 e divida por 3 = 33.3333 pegue esse valor e coloque na função de calc 
+
+             2.dentro da função retira os espaços extras como padding e margin lembrando caso
+             tenha 5 px de padding, conte com o pading do elemento 1 da esquerda e 2 do centro 
+             caso seja 5 dobre o valor 
+   normamelte e alinhamento vertical 
+    align-content: normalmente trabalho no eixo secundario (vertical)
+    align-content: streetch; ele estica o item ocupando toda a area 
+    para funcionar o flex-rap tem que estar em rap e o item não deve ter heigth definido
+    align-content: center; é realizado a centralização sem espacamento entre elementos 
+    align-content: flex-start; alinha os itens na primeira parte do eixo secundario sem espaçamento de itens
+    align-content: flex-end; alinha os itens na ultima parte do eixo secundario neste caso o eixo vertical 
+    align-content:space-around é a mesma coisa que align-itens: center;
+    align-content:space-between; faz o espaçamento entre os itens porem não a espaçamento no primeiro e ultimo item
+    referido como flex-start e flex-end
+
+Aula 8: Flex-Grow
+São propriedade de itens NÃO SAO COLOCADOS NOS CONTEINERS E SIM NOS ITENS
+    flex-grow: os itens irao redimensionar e ocupara toda a area disponivel no conteiner
+    flex-grow:1;  é como se fosse a ordem de tamanhos, quanto maior o tamanho de flex grow maior sera o conteiner
+    flex-grow:2;
+    flex-grow:3;
+
+    O tamanho do item depende do que tem dentro do flex item caso 
+    tenha pouca coisa dentro do flex-item o tamanho sera menor 
+    O justify-content não fazera efeito no flex-grow
+
+Aula 9: Flex-basis
+    Flex-basis: ira igualar os tamanhos dos elementos ocupando toda a area horizontal
+    
+    flex-basis:0 ira igualar todos os itens 
+    flex-basis:1 
+    flex-basis:2
+
+Aula 10: Order
+  order: Serve para redefinir as ordens dos elementos
+  é uma propriedade do elemento
+  
+Aula 11: Flex-Shrink
+Quanto maior o valor do flex-shrink maior é a capacidade de reduçao desse elemento
+
+  Flex-shrink: determina a capacidade do elemento de reduzir para caber no conteiner  
+  flex-shrink:1; valor padrao ele permite reduzir o item para caber no conteiner 
+
+  flex-shrink:0 o elemento não ira reduzir o seu tamanho para caber em uma div
+  O flex-shrink tem q ser usado sem o flex-wrap:rap;
+
+Aula 12: Flex
+flex: é um atalho das propriendades flex-grow: x, flex-shrink:1; , flex-basis:0; 
+    em conjunta 
+
+    flex:2; ==  flex-grow:2      
+                flex-shrink: 1;
+                flex-basis: 2;
+
+     flex:3 2 200px; ==  flex-grow:3      
+                         flex-shrink: 2;
+                         flex-basis: 200px;          
+
+Aula 13 Align-Self
+   Tudo depende do flex-direction: caso seja row ele trabalha no eixo vertical se não sera ao contrario  
+    Align-self: permite alinha somente um item em um grupo de elementos
+        ele permite a mudança do eixo secundario ou seja do eixo vertical 

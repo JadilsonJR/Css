@@ -1,0 +1,14 @@
+
+a{
+	text-decoration: none;
+	color: #FFF;
+	background-color: #006;
+	font-size: 20px;
+	padding: 20px;
+
+}
+a:hover{
+	color:#F00;
+	background: #88F;
+
+}

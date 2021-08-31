@@ -1,0 +1,29 @@
+html{
+	font-size: 20px;/*Elemento Pai do P*/
+}
+body{
+	font-size: 2em;/*Elemento Pai Html 2x o tamanho 20px*/
+}
+p{
+	font-size: 2em;/*Tamanho da Fonte elemento Pai x2*/
+}
+#p3{
+	color:#F00;
+	font-size: 30px;
+}
+
+div{
+	display: inline-block;
+	width: 200px;
+}
+
+#d1{
+	border: 1px solid #F00;
+	height: 2em;/*Elemento filho do body*/
+
+}
+
+#d2{
+	border: 1px solid #00F;
+	height: 20px;
+}

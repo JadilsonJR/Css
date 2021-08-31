@@ -1,0 +1,28 @@
+img{
+	/* Para se fazer a sombra
+	filter: drop-shadow(dist.X,dist.Y,Tamanho,cor);
+	*/
+	width: 300px;
+	border-radius: 10px;
+	/* Sombras Do Elemento
+	filter: drop-shadow(0px 0px 15px #F00)
+	*/
+
+	/* Matiz do Elemeto
+	filter: hue-rotate(45deg);
+	*/
+
+	/* Inverte a cor
+	filter: invert(0%);
+	*/
+
+	/* Trasparencia
+	filter: opacity(80%);
+	*/
+
+	/* Saturaçao
+	filter: saturate(150%);
+	*/
+
+	filter: sepia(100%);
+}

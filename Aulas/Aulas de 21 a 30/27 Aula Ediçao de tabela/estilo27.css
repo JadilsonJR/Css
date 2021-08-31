@@ -1,0 +1,36 @@
+div{
+	border: 1px solid #000;
+	background-color: tomato;
+	width: 200px;
+	height: 200px;
+	display: table-cell;
+	/*line-height: 200px; serve para alinhar o texto verticalmente*/
+	text-align: center;
+	vertical-align: middle;
+}
+ol,ul,li{
+	border: 1px solid #000;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 300px;
+
+}
+
+ol{
+	margin-top:20px;
+	display: table;
+}
+
+ul{
+	display: table-row;
+
+}
+
+li{
+	display: table-cell;
+}
+
+.titulo{
+	background-color: turquoise;
+}

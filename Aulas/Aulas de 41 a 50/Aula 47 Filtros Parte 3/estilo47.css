@@ -1,0 +1,4 @@
+img {
+	width: 300px;
+	filter: blur(0.8px) drop-shadow(5px 5px 10px #000) sepia(40%) brightness(150%);
+}

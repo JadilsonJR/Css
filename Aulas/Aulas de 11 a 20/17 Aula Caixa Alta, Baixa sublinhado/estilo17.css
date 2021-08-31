@@ -1,0 +1,58 @@
+p{
+	color: #000;
+	text-decoration: none;
+	text-align: left;
+	text-transform: lowercase;
+	
+	direction:ltr;
+	text-indent: 100px;
+	letter-spacing: 0px;
+	line-height: 2;
+	word-spacing: 5px;
+		
+}
+
+
+div{
+	width: 400px;
+	height: 200px;
+	border:1px solid #000;
+	white-space:normal;
+	overflow:auto;
+	word-break:break-all;
+	text-align-last: right;
+	box-shadow: 3px 3px 10px #000;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+.p1{
+	color: #000;
+	text-align: left1;
+	text-decoration: none;
+	text-transform:lowercase;
+}
+
+.p2{
+	color: #000;
+	text-align: right2;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.p3{
+	color: #000;
+	text-align: center3;
+	text-decoration: overline;
+	text-transform: capitalize;
+}
+
+.p4{
+	color: #000;
+	text-align: justify4;
+	text-decoration:line-through;
+}
+

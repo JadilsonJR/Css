@@ -1,0 +1,37 @@
+/* Animaçao para Mover */
+@keyframes anima{
+	0%{left: 0px;top:0px}
+	25%{left: 500px;top:0px}
+	50%{left: 500px;top:500px}
+	75%{left: 0px;top:500px}
+	100%{left: 0px;top:0px}
+	
+}
+
+
+p{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 260px;
+	height: 260px;
+	border:1px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: justify;
+	overflow: auto;
+	/* nome da animaçao */
+	animation-name:anima;
+	/* duraçao da animaçao */
+	animation-duration: 1s; 
+	/* tempo de atraso de inicio*/
+	animation-delay: 0s;
+	/* velocidade uniforme */
+	animation-timing-function: linear;
+	/* animaçao repetindo infinitamente ou quantas vezes vc querer basta colocar o numero */
+	animation-iteration-count: infinite;
+	/* animaçao parada =paused ou corendo= running*/
+	animation-play-state: running;
+	/* tipo de direçao: alternate,reverse,normal ; */
+	animation-direction:alternate;
+}

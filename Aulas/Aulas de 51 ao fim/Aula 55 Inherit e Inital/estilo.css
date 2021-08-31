@@ -1,0 +1,22 @@
+html{
+	color: #F00;
+}
+body{
+	color: #0F0;
+}
+#d1{
+	color: #F00;
+}
+#d2{
+	color: #F0F;
+}
+
+h1,p{
+	color:inherit;/*Pega a Formataçao do Elemento Pai*/
+}
+
+/*
+Inherit = Pega o Valor da Formataçao do Elemento Pai 
+Initial= Deixa o elemento com a Formataçao Inicial ou seja zerada padrao
+
+*/

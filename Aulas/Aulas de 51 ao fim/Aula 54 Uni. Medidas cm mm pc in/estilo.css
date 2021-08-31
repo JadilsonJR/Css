@@ -1,0 +1,39 @@
+p{
+
+}
+#p1{
+	font-size: 20px;
+}
+#p2{
+	font-size: 20pt;/*1pt = 1,3333px*/
+}
+#p3{
+	font-size: 2pc;/*1pc = 16px*/
+}
+
+div{
+	display: inline-block;
+}
+#d1{
+	border: 1px solid #F00;
+	width: 1cm;/* */
+	height: 1cm;/* */ 
+}
+#d2{
+	border: 1px solid #00F;
+	width: 10mm;
+	height: 10mm;
+}
+#d3{
+	border:1px solid #000;
+	width:1in;/* 1in = 2,24 cm in=polegada*/ 
+	height:1in;
+}
+/*
+	1cm = 37,7952px;
+	1mm = 3,7795px;
+	1in = 96px;
+	1pc = 16px;
+	1pt = 1,3333px;
+
+ */ 

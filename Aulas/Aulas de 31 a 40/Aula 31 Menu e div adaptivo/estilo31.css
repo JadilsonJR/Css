@@ -1,0 +1,50 @@
+header{
+	height: 150px;
+}
+
+
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #F00;
+	min-width: 400px;
+}
+nav a{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 18px;
+	color: #FFF;
+	width: 120px;
+	flex:0 1 auto;
+
+}
+
+section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+section div{
+	display: flex;
+	margin: 5px;
+	height: 100px;
+	width: 170px;
+	border: 2px solid #F00;
+
+}
+
+footer{
+	display: flex;
+	height: 50px;
+	background-color: #AAA;
+	color: #FFF;
+	justify-content: center;
+	align-items: center;
+}

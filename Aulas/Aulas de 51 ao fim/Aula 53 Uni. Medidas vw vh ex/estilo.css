@@ -1,0 +1,18 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	font-family: Arial;
+}
+#d1{
+	border: 1px solid #F00;
+	width: 90vw;/*90 partes de 100 */
+	height: 90vh;/*90 partes de 100 */ 
+}
+#d2{
+	border: 1px solid #00F;
+	width: 50%;
+	height: 50%;
+}
+
+/*ex leva em consideraçao o tamanho da fonte do elemento Pai parecendo com o EM*/

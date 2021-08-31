@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <style>
+         .item{
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+         }
+
+         .container{
+             max-width: 500px;
+             margin: 0 auto;
+             border: 1px solid #000;
+
+         }
+
+        .flex{
+            display: flex;
+        }
+
+        .horizontal{
+            flex-direction: row;
+        }
+
+        .vertical{
+            flex-direction: column;
+        }
+
+        .quebra{
+            flex-wrap: wrap;
+        }
+
+        .fluxo_horizontal_quebra {
+            flex-flow: column-reverse;
+        }
+
+        body{
+            font-family: arial;
+            color: #000;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container flex fluxo_horizontal_quebra ">
+        <div class="item ">CFB Cursos 1</div>
+        <div class="item ">CFB Cursos 2</div>
+        <div class="item ">CFB Cursos 3</div>
+        <div class="item ">CFB Cursos 4</div>
+        <div class="item ">CFB Cursos 5</div>
+        <div class="item ">CFB Cursos 6</div>
+      
+    </div>     
+</body>
+</html>
+
+
+<!-- 
+   
+    FLEX-FLOW: é a uniao dos comandos Flex-direction e Flex-wrap
+    flex-flow: row wrap; é a uniao do modo horizontal com quebra
+    flex-flow: colunm wrap; é a uniao do modo vertical com quebra
+    
+
+ -->

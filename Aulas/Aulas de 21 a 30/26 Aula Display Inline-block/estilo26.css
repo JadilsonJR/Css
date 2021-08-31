@@ -1,0 +1,24 @@
+div,span{
+	border:1px solid #000;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+
+}
+
+#d1{
+	display:inline-block;
+}
+
+#sp1{
+	display: inline-block;
+}
+
+#d2{
+	display: inline-block;
+}
+
+
+#sp2{
+	display: inline-block;
+}

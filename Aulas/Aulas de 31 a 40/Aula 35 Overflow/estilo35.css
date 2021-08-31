@@ -1,0 +1,8 @@
+#d1{
+	border: 1px solid #000;
+	width: 300px;
+	height: 300px;
+	/*Serve para quando um texto ultrapassar uma div */
+	/* OPÇOES auto scroll hidden */
+	overflow:auto;
+}

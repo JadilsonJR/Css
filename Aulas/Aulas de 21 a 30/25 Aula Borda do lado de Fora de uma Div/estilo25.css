@@ -1,0 +1,15 @@
+body{
+	margin: 20px;
+	padding: 0px;
+}
+div{
+	float: left;
+	width: 200px;
+	height: 200px;
+	background: #ddd;
+
+	
+	outline: 10px solid #000;
+	outline-offset: 10px;
+}
+

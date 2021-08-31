@@ -1,0 +1,22 @@
+img{
+	width: 600px;
+	/*  
+	Escala de cinza
+	filter: grayscale(100%);
+	*/
+
+	/*
+		Opacidade
+	filter: blur(0.5px);
+	*/
+
+	/*	
+		Brilho
+	filter: brightness(150%);
+	*/
+
+	/*
+		Contraste
+	filter: contrast(100%);
+	*/
+}

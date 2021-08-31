@@ -1,0 +1,12 @@
+section{
+	border: 3px solid #F00;
+	display: flex;
+	flex-wrap:wrap;
+
+}
+
+div{
+	border: 1px solid #000;
+	width: 100px;
+}
+

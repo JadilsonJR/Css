@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <style>
+         .item{
+            margin: 5px; 
+            padding: 5px; 
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            
+            /* caso eu queira que o elemento ocupe todo os espaços do conteiner
+             
+             1. Quantos elemento voce quer na linha do conteiner? neste caso 3
+             pegue 100 e divida por 3 = 33.3333 pegue esse valor e coloque na função de calc 
+
+             2.dentro da função retira os espaços extras como padding e margin lembrando caso
+             tenha 5 px de padding, conte com o pading do elemento 1 da esquerda e 2 do centro 
+             caso seja 5 dobre o valor 
+            */
+            width: calc(33.333% - 20px);
+         }
+
+         .container{
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            justify-content:center ;
+            align-content: stretch;
+            
+            
+         }
+
+        .flex{
+            display: flex;
+        }
+
+        .horizontal{
+            flex-direction: row;
+        }
+
+        .vertical{
+            flex-direction: column;
+        }
+
+        .quebra{
+            flex-wrap: wrap;
+        }
+
+        .fluxo_horizontal_quebra {
+            flex-flow: column-reverse;
+        }
+
+        body{
+            font-family: arial;
+            color: #000;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container flex horizontal quebra">
+        <div class="item ">CFB Cursos 1</div>
+        <div class="item ">CFB Cursos 2</div>
+        <div class="item ">CFB Cursos 3</div>
+        <div class="item ">CFB Cursos 4</div>
+        <div class="item ">CFB Cursos 5</div>
+        <div class="item ">CFB Cursos 6</div>
+        <div class="item ">CFB Cursos 7</div>
+        <div class="item ">CFB Cursos 8</div>
+       
+      
+    </div>     
+</body>
+</html>
+
+
+<!-- 
+    normamelte e alinhamento vertical 
+    align-content: normalmente trabalho no eixo secundario (vertical)
+    align-content: streetch; ele estica o item ocupando toda a area 
+    para funcionar o flex-rap tem que estar em rap e o item não deve ter heigth definido
+    align-content: center; é realizado a centralização sem espacamento entre elementos 
+    align-content: flex-start; alinha os itens na primeira parte do eixo secundario sem espaçamento de itens
+    align-content: flex-end; alinha os itens na ultima parte do eixo secundario neste caso o eixo vertical 
+    align-content:space-around é a mesma coisa que align-itens: center;
+    align-content:space-between; faz o espaçamento entre os itens porem não a espaçamento no primeiro e ultimo item
+    referido como flex-start e flex-end
+
+
+
+ -->

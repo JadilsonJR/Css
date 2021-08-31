@@ -1,0 +1,16 @@
+body{
+	
+	background-image: url(imagem1.png);
+	background-size: 200px;
+	background-repeat: repeat;
+	background-position: 0px;
+	overflow-x: scroll;
+
+}
+
+article{
+	font-size: 20pt;
+	background-image:url(imagem1.png);
+	
+
+}

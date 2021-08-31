@@ -1,0 +1,33 @@
+@font-face{
+	font-family: f1;
+	src: url(formula1.ttf);	
+}
+
+#menu1{
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	text-decoration: none;
+	background-color: #004;
+	color:#FFF;
+	padding-top:10px;
+	width: 200px;
+	height: 40px;
+	margin-left: 0px;
+	font-size: 20px;
+	box-shadow: 3px 3px 4px #000;
+	border-radius: 20px;
+	display:inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-family: f1;
+	
+}
+
+a:hover{
+	background: #88A;
+
+}

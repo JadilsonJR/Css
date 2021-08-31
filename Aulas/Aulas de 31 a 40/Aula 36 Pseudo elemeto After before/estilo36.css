@@ -1,0 +1,14 @@
+p.jr::before{
+	content: "JR-2020";
+	color: #F00;
+}
+
+p{
+	font-size: 40px;
+
+}
+
+p.jr::after{
+	content: "CRUZ";
+	color: #0F0;
+}
